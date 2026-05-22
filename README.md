@@ -9,7 +9,7 @@ Invoke-RestMethod -Method DELETE -Uri "http://localhost:8080/api/admin/rooms/id 
 
 Просмотр комнат-  
 http://localhost:8080/api/admin/rooms  
-ИЛИ  
+ИЛИ    
 Invoke-RestMethod -Method GET -Uri "http://localhost:8080/rooms"
 
 Бронь комнаты-  
@@ -17,5 +17,5 @@ Invoke-RestMethod -Method POST -Uri "http://localhost:8080/bookings" -ContentTyp
 
 Просмотр забронированных комнат  
 http://localhost:8080/bookings 
-ИЛИ  
+ИЛИ    
 Invoke-RestMethod -Method GET -Uri "http://localhost:8080/bookings"
