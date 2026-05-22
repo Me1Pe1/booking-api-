@@ -30,4 +30,9 @@ public class BookingController {
     public List<Booking> getAll() {
         return bookingService.getAll();
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+        bookingService.delete(id);
+    }
 }
