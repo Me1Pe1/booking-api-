@@ -8,10 +8,14 @@ Invoke-RestMethod -Method POST -Uri "http://localhost:8080/api/admin/rooms" -Con
 Invoke-RestMethod -Method DELETE -Uri "http://localhost:8080/api/admin/rooms/id комнаты"
 
 Просмотр комнат-  
-http://localhost:8080/api/admin/rooms
+http://localhost:8080/api/admin/rooms  
+ИЛИ  
+Invoke-RestMethod -Method GET -Uri "http://localhost:8080/rooms"
 
 Бронь комнаты-  
 Invoke-RestMethod -Method POST -Uri "http://localhost:8080/bookings" -ContentType "application/json" -Body '{"username":"user1","room":{"id":ID комнаты},"startDate":"2026-05-20","endDate":"2026-05-22"}'
 
 Просмотр забронированных комнат  
 http://localhost:8080/bookings 
+ИЛИ  
+Invoke-RestMethod -Method GET -Uri "http://localhost:8080/bookings"
