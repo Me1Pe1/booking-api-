@@ -13,5 +13,5 @@ http://localhost:8080/api/admin/rooms
 Бронь комнаты-  
 Invoke-RestMethod -Method POST -Uri "http://localhost:8080/bookings" -ContentType "application/json" -Body '{"username":"user1","room":{"id":ID комнаты},"startDate":"2026-05-20","endDate":"2026-05-22"}'
 
-Просмотр забронированных комнат
+Просмотр забронированных комнат  
 http://localhost:8080/bookings 
