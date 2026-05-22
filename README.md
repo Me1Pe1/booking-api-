@@ -19,3 +19,6 @@ Invoke-RestMethod -Method POST -Uri "http://localhost:8080/bookings" -ContentTyp
 http://localhost:8080/bookings   
 ИЛИ    
 Invoke-RestMethod -Method GET -Uri "http://localhost:8080/bookings"
+
+Удаление брони  
+Invoke-RestMethod -Method DELETE -Uri "http://localhost:8080/bookings/id комнаты"
