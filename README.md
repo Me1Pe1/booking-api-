@@ -16,6 +16,6 @@ Invoke-RestMethod -Method GET -Uri "http://localhost:8080/rooms"
 Invoke-RestMethod -Method POST -Uri "http://localhost:8080/bookings" -ContentType "application/json" -Body '{"username":"user1","room":{"id":ID комнаты},"startDate":"2026-05-20","endDate":"2026-05-22"}'
 
 Просмотр забронированных комнат  
-http://localhost:8080/bookings 
+http://localhost:8080/bookings   
 ИЛИ    
 Invoke-RestMethod -Method GET -Uri "http://localhost:8080/bookings"
